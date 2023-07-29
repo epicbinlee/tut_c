@@ -33,6 +33,7 @@ int main() {
     std::cout << "两点之间的距离：" << distance << std::endl;
 
     std::cout << "测试用例：cgal求解交点. --------------------------------------------" << std::endl;
+    // https://doc.cgal.org/latest/Surface_sweep_2/index.html#Chapter_2D_Intersection_of_Curves
 
     // Construct the input segments.
     Segment_2 segments[] = {Segment_2(Point_2(1, 5), Point_2(8, 5)),
