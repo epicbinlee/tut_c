@@ -9,7 +9,7 @@
 #include <boost/regex.hpp>
 
 int main() {
-    // String splitting with Boost
+    // 使用 Boost 进行字符串拆分
     std::string input = "Hello,Boost,C++,Demo";
     std::vector<std::string> tokens;
     boost::split(tokens, input, boost::is_any_of(","));
@@ -19,9 +19,9 @@ int main() {
         std::cout << token << std::endl;
     }
 
-    // Regular expression matching with Boost
+    // 使用 Boost 进行正则表达式匹配
     std::string text = "The phone number is 123-456-7890 and another number is 987-654-3210.";
-    boost::regex phone_pattern("\\b\\d{3}-\\d{3}-\\d{4}\\b");
+    boost::regex phone_pattern(R"(\b\d{3}-\d{3}-\d{4}\b)");
     boost::sregex_iterator it(text.begin(), text.end(), phone_pattern);
     boost::sregex_iterator end;
 
