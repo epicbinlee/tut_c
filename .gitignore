@@ -1,0 +1,41 @@
+# 忽略编译输出目录
+out/
+cmake-build-debug/
+cmake-build-release/
+
+# 忽略CLion项目文件
+.idea/
+*.iml
+
+# 忽略CMake生成的文件
+CMakeLists.txt.user
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 忽略编译器生成的文件
+CMakeFiles/
+*.cmake
+
+# 忽略自动生成的文件
+compile_commands.json
+compile_commands.json.dir/
+*.json
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件和备份文件
+*.tmp
+*~
+
+# 忽略依赖和包管理文件（可根据实际使用情况添加）
+# 例如，对于C++项目，可以忽略以下文件：
+# .vscode/
+# .cquery
+# .clangd
+# build/
+# 忽略特定的编译器和编辑器配置文件
+# 例如，对于GCC，可以忽略以下文件：
+# .gcc-flags.json
+# .gcc-flags.json.lock
