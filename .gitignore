@@ -3,10 +3,11 @@ out/
 cmake-build-debug/
 cmake-build-release/
 
+output/
+
 # 忽略CLion项目文件
 .idea/
 *.iml
-
 # 忽略CMake生成的文件
 CMakeLists.txt.user
 CMakeCache.txt
