@@ -82,3 +82,17 @@ make             # 编译项目
 | WTFPL                          | 否                | 是           | 否           | 是              | 是     | 无      | 无      | 无      | 法国法律 | 无   | 无      |
 | Unlicense                      | 否                | 是           | 是           | 是              | 是     | 无      | 无      | 无      | 无      | 无   | 无      |
 
+## 常见的命令
+
+```
+source /usr/local/miniconda3/bin/activate && conda activate /usr/local/python3.10
+conda install -c rapidsai -c conda-forge -c nvidia cudf=23.10 python=3.10 cuda-version=11.8
+```
+
+
+
+
+
+
+
+

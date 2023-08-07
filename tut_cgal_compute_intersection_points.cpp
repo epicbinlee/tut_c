@@ -4,7 +4,10 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main() {
+    cout << "This is a cpp program." << endl;
     return 0;
 }
 
