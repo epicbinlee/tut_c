@@ -90,6 +90,17 @@ conda install -c rapidsai -c conda-forge -c nvidia cudf=23.10 python=3.10 cuda-v
 ```
 
 
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.repo | sudo tee /etc/yum.repos.d/nvidia-docker.repo
+
+yum install --downloadonly nvidia-docker2 --downloaddir=/tmp/nvidia
+
+yum install docker-ce.x86_64-17.03.0.ce-1.el7.centos
+yum install docker-ce-18.06.3.ce-3.el7
+
+yum install --downloadonly docker-ce-18.06.3.ce-3.el7 --downloaddir=/tmp/docker
+
+
 
 
 
