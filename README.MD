@@ -100,7 +100,8 @@ yum install docker-ce-18.06.3.ce-3.el7
 
 yum install --downloadonly docker-ce-18.06.3.ce-3.el7 --downloaddir=/tmp/docker
 
-
+sudo yum install -y nvidia-container-toolkit
+yum install --downloadonly nvidia-container-toolkit --downloaddir=/tmp/nvidia-container-toolkit
 
 
 
