@@ -82,3 +82,29 @@ make             # 编译项目
 | WTFPL                          | 否                | 是           | 否           | 是              | 是     | 无      | 无      | 无      | 法国法律 | 无   | 无      |
 | Unlicense                      | 否                | 是           | 是           | 是              | 是     | 无      | 无      | 无      | 无      | 无   | 无      |
 
+## 常见的命令
+
+```
+source /usr/local/miniconda3/bin/activate && conda activate /usr/local/python3.10
+conda install -c rapidsai -c conda-forge -c nvidia cudf=23.10 python=3.10 cuda-version=11.8
+```
+
+
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.repo | sudo tee /etc/yum.repos.d/nvidia-docker.repo
+
+yum install --downloadonly nvidia-docker2 --downloaddir=/tmp/nvidia
+
+yum install docker-ce.x86_64-17.03.0.ce-1.el7.centos
+yum install docker-ce-18.06.3.ce-3.el7
+
+yum install --downloadonly docker-ce-18.06.3.ce-3.el7 --downloaddir=/tmp/docker
+
+sudo yum install -y nvidia-container-toolkit
+yum install --downloadonly nvidia-container-toolkit --downloaddir=/tmp/nvidia-container-toolkit
+
+
+
+
+
+
